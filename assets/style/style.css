@@ -221,6 +221,45 @@ header .navbar {
   text-transform: capitalize;
 }
 
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-block: var(--section-padding);
+  background-color: var(--black);
+  padding-inline: 20px;
+}
+
+footer .foot-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .profile-box p.desc {
+  color: var(--white-purple);
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 25px;
+}
+
+footer .social-box ul {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+footer .social-box .social-icon {
+  background-color: var(--gray);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
 
