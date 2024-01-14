@@ -581,7 +581,8 @@ footer .foot-copyright .copy-desc {
   #hero .container,
   #about .container,
   #service .container,
-  #pricing .container {
+  #pricing .container,
+  #contact .container {
     width: 1248px;
     margin-inline: auto;
   }
@@ -623,12 +624,14 @@ footer .foot-copyright .copy-desc {
 
   /* HERO */
   #hero .container,
-  #about .container {
+  #about .container,
+  #contact .container {
     padding: 0;
     flex-direction: row;
   }
 
-  #hero .content-text {
+  #hero .content-text,
+  #contact .content-img {
     width: 50%;
   }
 
@@ -745,6 +748,30 @@ footer .foot-copyright .copy-desc {
   #pricing .benefit-box:first-child {
     margin-top: 0;
   } 
+
+  #contact .container {
+    gap: 70px;
+  }
+
+  #contact .content-img {
+    height: 700px;
+    display: grid;
+    align-items: center;
+  }
+
+  #contact .content-img img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #contact .content-text {
+    width: 50%;
+  }
+
+  #contact form ul li.flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
 
   /* FOOTER */
