@@ -527,7 +527,8 @@ footer .foot-copyright .copy-desc {
   .container,
   #hero .container,
   #about .container,
-  #service .container {
+  #service .container,
+  #pricing .container {
     width: 1248px;
     margin-inline: auto;
   }
@@ -642,14 +643,16 @@ footer .foot-copyright .copy-desc {
 
   /* SERVICE */
 
-  #service .section-title .h2 {
+  #service .section-title .h2,
+  #pricing .section-title .h2 {
     font-size: 36px;
     font-weight: var(--fw-semi-bold);
     width: 545px;
     margin-inline: auto;
   }
 
-  #service .section-title .desc {
+  #service .section-title .desc,
+  #pricing .section-title .desc {
     width: 585px;
     margin-inline: auto;
   }
@@ -664,6 +667,31 @@ footer .foot-copyright .copy-desc {
     width: 33%;
   }
 
+
+  /* PRICING */
+
+  #pricing .pricing-section {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #pricing .pricing-box {
+    height: 420px;
+    
+  }
+
+  #pricing .pricing-benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #pricing .benefit-box {
+    width: 50%;
+  }
+
+  #pricing .benefit-box:first-child {
+    margin-top: 0;
+  } 
 
 
   /* FOOTER */
