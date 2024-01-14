@@ -53,6 +53,7 @@ a {
   text-transform: capitalize;
   text-wrap: nowrap;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -266,28 +267,34 @@ header .navbar {
   background-color: var(--white);
 }
 
-#service .container {
+#service .container,
+#pricing .container {
   padding-inline: 20px;
 }
 
-#service .section-title {
+#service .section-title,
+#pricing .section-title {
   text-align: center;
   margin-bottom: 70px;
 }
 
-#service .section-title .h4 {
+#service .section-title .h4,
+#pricing .section-title .h4 {
   color: var(--purple);
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
-#service .section-title .h2 {
+#service .section-title .h2,
+#pricing .section-title .h2 {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
-#service .section-title .desc {
+#service .section-title .desc,
+#pricing .section-title .desc,
+#pricing .pricing-box .desc {
   font-size: 16px;
   line-height: 28px;
   color: var(--gray);
@@ -299,14 +306,16 @@ header .navbar {
   gap: 20px;
 }
 
-#service .service-box {
+#service .service-box,
+#pricing .benefit-box {
   padding: 35px 25px;
   padding-bottom: 50px;
   border-radius: 15px;
   box-shadow: 0px 10px 40px 0px rgba(69, 62, 230, 0.16);
 }
 
-#service .service-box .icon-box {
+#service .service-box .icon-box,
+#pricing .benefit-box .icon-box {
   width: 80px;
   height: 80px;
   background-color: var(--white-purple);
@@ -317,18 +326,21 @@ header .navbar {
   margin-bottom: 40px;
 }
 
-#service .service-box .icon-box img {
+#service .service-box .icon-box img,
+#pricing .benefit-box .icon-box img {
   width: 40px;
 }
 
-#service .service-box .title-service {
+#service .service-box .title-service,
+#pricing .benefit-box .title-benefit {
   font-size: 24px;
   color: var(--purple);
   text-transform: capitalize;
   margin-bottom: 15px;
 }
 
-#service .service-box .desc {
+#service .service-box .desc,
+#pricing .benefit-box .desc {
   color: var(--gray);
   font-size: 16px;
   line-height: 28px;
@@ -339,6 +351,69 @@ header .navbar {
   font-size: 16px;
   text-transform: capitalize;
 }
+
+
+/* PRICING */
+
+#pricing {
+  width: 100%;
+  padding-block: var(--section-padding);
+}
+
+#pricing .pricing-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#pricing .pricing-box {
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 10px 40px 0px rgba(69, 62, 230, 0.16);
+  padding: 30px 40px;
+}
+
+#pricing .pricing-box .h4 {
+  font-size: 16px;
+  color: var(--purple);
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+#pricing .pricing-box .price {
+  color: var(--purple);
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+#pricing .pricing-box .currancy {
+  font-size: 24px;
+}
+
+#pricing .pricing-box .per {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#pricing .pricing-box .desc {
+  margin-bottom: 40px;
+}
+
+#pricing .pricing-benefits {
+  display: flex;
+  flex-direction: column;
+}
+
+#pricing .benefit-box {
+  padding-top: 0;
+  background: transparent;
+  box-shadow: 0 0 0 0;
+  gap: 0;
+}
+
+#pricing .benefit-box:first-child {
+  margin-top: 50px;
+}
+
 
 
 /* FOOTER */
@@ -564,6 +639,9 @@ footer .foot-copyright .copy-desc {
     font-size: 42px;
   }
 
+
+  /* SERVICE */
+
   #service .section-title .h2 {
     font-size: 36px;
     font-weight: var(--fw-semi-bold);
@@ -584,6 +662,25 @@ footer .foot-copyright .copy-desc {
 
   #service .service-box {
     width: 33%;
+  }
+
+
+
+  /* FOOTER */
+
+  footer .foot-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .profile-box {
+    width: 25%;
+  }
+
+  footer .company-box,
+  footer .resource-box,
+  footer .subscribe-box  {
+    margin-top: -40px;
   }
 
 }
