@@ -451,7 +451,8 @@ footer .foot-copyright .copy-desc {
 
   .container,
   #hero .container,
-  #about .container {
+  #about .container,
+  #service .container {
     width: 1248px;
     margin-inline: auto;
   }
@@ -561,6 +562,28 @@ footer .foot-copyright .copy-desc {
 
   #about .content-text .rate .rate-item .h3 {
     font-size: 42px;
+  }
+
+  #service .section-title .h2 {
+    font-size: 36px;
+    font-weight: var(--fw-semi-bold);
+    width: 545px;
+    margin-inline: auto;
+  }
+
+  #service .section-title .desc {
+    width: 585px;
+    margin-inline: auto;
+  }
+
+  #service .service-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  #service .service-box {
+    width: 33%;
   }
 
 }
